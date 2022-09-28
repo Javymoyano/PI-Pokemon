@@ -1,0 +1,49 @@
+.nav-container {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  background-color: #2e2b2b;
+  gap: 8rem;
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  justify-content: space-around;
+}
+.logo {
+  width: 150px;
+  position: relative;
+  padding: 1rem;
+}
+
+.ambos {
+  display: inline-flex;
+  position: relative;
+  margin: 20px;
+  gap: 2px;
+}
+
+.crearPokemon {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  padding: 6px;
+  left: 10%;
+  top: 12px;
+  background-color: #ffcc03;
+  border-radius: 50%;
+}
+
+.crearPokemon:hover {
+  background-color: #f03e34;
+}
+
+.encuentra {
+  color: #ffcc03;
+  font-size: 40px;
+  position: relative;
+  left: 20%;
+}

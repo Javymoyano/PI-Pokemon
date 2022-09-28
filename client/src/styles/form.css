@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+.container-form {
+  background-image: url("../componentes/image/pokeForm12.png");
+  margin: 0;
+  padding: 0;
+  position: absolute;
+
+  width: 100vw;
+
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.form {
+  width: 300px;
+  height: 100%;
+  padding: 15px;
+  margin: auto;
+  background-color: #2e2b2b;
+
+  display: block;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 30%;
+  bottom: 30px;
+}
+.input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc03;
+  padding: 5px;
+  color: #2e2b2b;
+}
+
+.tipos {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc03;
+  padding: 5px 53px;
+  color: #3c59a4;
+}
+.title {
+  font-size: 50%;
+  color: #ffcc03;
+  font-family: Poppins, sans-serif;
+  display: block;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  left: 10%;
+  bottom: 30px;
+}
+
+li {
+  margin-top: 1px;
+  font-size: 12px;
+  text-align: center;
+  color: #3c59a4;
+  padding-right: 30px;
+  list-style: none;
+}
+
+label {
+  margin: 7px;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  outline: none;
+}
+.error {
+  color: #bd441c;
+  margin-top: 2px;
+  font-size: 14px;
+  position: relative;
+}
+
+.types-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.bottom {
+  background-color: #3c59a4;
+  border-radius: 5px;
+  font-weight: bold;
+  border-color: transparent;
+  padding: 8px;
+  color: rgb(243, 231, 255);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.bottom:hover {
+  background-color: #ffcc03;
+  color: #2e2b2b;
+}
+
+.atras {
+  background-color: #ffcc03;
+  border-color: transparent;
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 5px;
+  position: relative;
+  right: 40%;
+  top: 30px;
+
+  color: #2e2b2b;
+  margin-right: auto;
+  cursor: pointer;
+  padding: 8px 8px;
+}
+.atras:hover {
+  background-color: #2e2b2b;
+  color: #ffcc03;
+}
+.types {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc03;
+  padding: 5px;
+  color: #2e2b2b;
+}
+
+button {
+  align-content: center;
+  margin-top: 5px;
+}

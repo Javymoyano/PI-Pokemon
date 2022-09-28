@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800;900&display=swap");
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  margin: 42% 5%;
+  padding: 15px 50px;
+  background-color: #ffcc03;
+  color: #3c59a4;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-decoration-line: none;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 1s;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #2e2b2b;
+  background: #ffcc03;
+  box-shadow: 0 0 10px #ffcc03, 0 0 40px #ffcc03, 0 0 80px #ffcc03;
+}
+
+.landing {
+  background-image: url("../componentes/image/poke-landing.png");
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}

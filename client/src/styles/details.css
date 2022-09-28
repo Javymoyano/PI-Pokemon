@@ -1,0 +1,116 @@
+.loading {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-loading {
+  background-color: #ffcc03;
+  border-color: transparent;
+
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 5px;
+  position: flex;
+
+  color: #2e2b2b;
+  margin-right: auto;
+  margin-top: 12%;
+  margin-right: 50%;
+  cursor: pointer;
+  padding: 8px 8px;
+}
+
+.btn-loading:hover {
+  background-color: #2e2b2b;
+  color: #ffcc03;
+}
+
+.all {
+  position: relative;
+  right: 20%;
+}
+.nombre-poke {
+  font-size: 50px;
+  color: #f03e34;
+  left: 20%;
+  margin-bottom: 1px;
+}
+
+.img-poke {
+  width: 250px;
+  gap: 2rem;
+}
+
+.estadisticas {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 4rem;
+  margin-top: -25%;
+  margin-left: 20%;
+}
+
+.estadisticas h4 {
+  border-color: #f03e34;
+  background-color: #f03e34;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin: 7px 25px;
+  width: max-content;
+  display: inline-block;
+  color: #2e2b2b;
+}
+
+.tiposPoke {
+  border-color: #f03e34;
+  background-color: #f03e34;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin: 7px 25px;
+  width: max-content;
+  display: inline-block;
+}
+
+.contenedor-tipos {
+  text-align: center;
+  gap: 2rem;
+  margin-left: -2%;
+  display: block;
+}
+
+.column1 {
+  background-color: #ffcc03;
+
+  border-radius: 25px;
+  padding-top: 10px;
+  margin: 1px;
+}
+.column2 {
+  background-color: #ffcc03;
+  border-radius: 25px;
+  padding-top: 10px;
+  margin: 1px;
+}
+
+.estadisticas h5 {
+  color: #2e2b2b;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 1px;
+}
+.id-poke {
+  color: #3c59a4;
+  font-weight: bold;
+  margin: 1px;
+  position: relative;
+  left: -10%;
+}
