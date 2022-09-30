@@ -6,9 +6,7 @@ const { API } = process.env;
 const getPokeInfo = async () => {
   try {
     const pokeApi = [];
-    const consultaApi = await axios.get(
-      "https://pokeapi.co/api/v2/pokemon?offset=0&limit=25" // volver a 40
-    );
+    const consultaApi = await axios.get(API);
     //console.log(consultaApi.data);
     const otraConsultaApi = consultaApi.data.results.map((cons) => cons.url);
     //console.log(otraConsultaApi);

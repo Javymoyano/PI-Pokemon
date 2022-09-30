@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/card.css";
 
-export default function Card({ name, types, image, attack, onClose, id }) {
+export default function Card({ name, types, image, attack }) {
   return (
     <div className="stylesCard">
       <div className="fondo_img">

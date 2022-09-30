@@ -27,35 +27,50 @@ function rootReducer(state = initialState, action) {
       };
 
     case ALPHABETICAL_FILTER:
-      let sortedAlphetical = [...state.pokemons];
-      sortedAlphetical =
-        action.payload === "az"
-          ? state.pokemons.sort(function (a, b) {
-              if (a.name > b.name) {
-                return 1;
-              }
-              if (b.name > a.name) {
-                return -1;
-              }
-              return 0;
-            })
-          : state.pokemons.sort(function (a, b) {
-              if (a.name > b.name) {
-                return -1;
-              }
-              if (b.name > a.name) {
-                return 1;
-              }
-              return 0;
-            });
+      let all = state.pokemons;
+      if (action.payload === "az")
+        all.sort((a, b) =>
+          a.name.toUpperCase().localeCompare(b.name.toUpperCase())
+        );
+      if (action.payload === "za")
+        all.sort((a, b) =>
+          b.name.toUpperCase().localeCompare(a.name.toUpperCase())
+        );
+      if (action.payload === "all") all = state.pokemons;
       return {
         ...state,
-        pokemons: sortedAlphetical,
-        allPokemons: action.payload,
+        pokemons: [...all],
       };
+    // let sortedAlphetical = [...state.pokemons];
+    // sortedAlphetical =
+    //   action.payload === "az"
+    //     ? state.pokemons.sort(function (a, b) {
+    //         if (a.name > b.name) {
+    //           return 1;
+    //         }
+    //         if (b.name > a.name) {
+    //           return -1;
+    //         }
+    //         return 0;
+    //       })
+    //     : state.pokemons.sort(function (a, b) {
+    //         if (a.name > b.name) {
+    //           return -1;
+    //         }
+    //         if (b.name > a.name) {
+    //           return 1;
+    //         }
+    //         return 0;
+    //       });
+    // return {
+    //   ...state,
+    //   pokemons: sortedAlphetical,
+    //   allPokemons: action.payload,
+    // };
 
     case FILTER_ATTACK:
-      let attackFilter = [...state.pokemons];
+      let attackFilter = state.pokemons;
+
       attackFilter = attackFilter.sort((a, b) => {
         if (a.attack < b.attack) {
           return action.payload === "asc" ? 1 : -1;
@@ -71,7 +86,7 @@ function rootReducer(state = initialState, action) {
           action.payload === "Fuerza" ? state.allPokemons : attackFilter,
       };
     case FILTER_BY_TYPES:
-      const allPokes = [...state.allPokemons];
+      const allPokes = state.allPokemons;
       const filterTypes =
         action.payload === "type"
           ? allPokes
@@ -116,11 +131,6 @@ function rootReducer(state = initialState, action) {
         types: action.payload,
       };
 
-    // case 'GET_CLEAN':
-    //   return {
-    //     ...state,
-    //     details: [],
-    //   };
     case "GET_CLEAN":
       return {
         ...state,

@@ -109,7 +109,7 @@ export default function Home() {
               />
             </div>
             <select onChange={(e) => handleSortAz(e)}>
-              <option>ORDEN ALFABÉTICO</option>
+              <option value="all">ORDEN ALFABÉTICO</option>
               <option value="az">A - Z</option>
               <option value="za">Z - A</option>
             </select>
@@ -119,7 +119,7 @@ export default function Home() {
               <option value="desc">Menor Fuerza</option>
             </select>
 
-            <select onChange={handleTypes}>
+            <select onChange={(e) => handleTypes(e)}>
               <option value="type">TIPO</option>
               <option value="normal"> Normal </option>
               <option value="flying"> Flying </option>

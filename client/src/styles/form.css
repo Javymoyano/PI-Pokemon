@@ -141,3 +141,8 @@ button {
   align-content: center;
   margin-top: 5px;
 }
+.elige-tipo {
+  color: #ffcc03;
+  margin: 2px;
+  font-size: 11px;
+}

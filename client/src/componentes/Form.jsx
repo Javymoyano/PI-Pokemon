@@ -15,7 +15,7 @@ function validar(input) {
   if (validName(input.name)) errors.name = "Por favor introduzca un Nombre";
   if (!input.life) errors.life = "Por favor introduzca la vida del Pokemon";
 
-  if (input.attack < 1 || input.attack > 1000)
+  if (input.attack < 1 || input.attack >= 1000)
     errors.attack = "Debe ser mayor a 1 y menor a 1000";
 
   if (!input.defense)
@@ -89,13 +89,6 @@ export default function Form() {
     alert("Pokemon creado con éxito");
 
     console.log("Soy el submit", input);
-  }
-
-  function handleDelete(t) {
-    setInput({
-      ...input,
-      types: input.types.filter((type) => type !== t),
-    });
   }
 
   return (
@@ -196,25 +189,21 @@ export default function Form() {
           {errors.image ? <p className="error">{errors.image}</p> : false}
         </div>
         <div>
-          <label>Tipos</label>
+          <label>Tipos*</label>
           <select className="tipos" onChange={handleTypes}>
             {types.map((e) => (
               <option value={e.name}>{e.name}</option>
             ))}
           </select>
-          {input.types.map((t) => (
-            <div>
-              <h5>{t}</h5>
-              <button onClick={() => handleDelete(t)} className="botonX">
-                x
-              </button>
-            </div>
-          ))}
-          {/* <ul>
+          <p className="elige-tipo">
+            <small>*Elige hasta DOS tipos</small>
+          </p>
+
+          <ul>
             <li key={types.id}>
               {input.types.map((e) => e.toUpperCase()).join(" - ")}
             </li>
-          </ul> */}
+          </ul>
           {errors.types ? <p className="error">{errors.types}</p> : false}
         </div>
 

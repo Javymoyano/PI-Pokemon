@@ -28,7 +28,7 @@ export default function Searchbar() {
           className={styles.inputSearch}
           type="text"
           placeholder="Buscar un Pokemon..."
-          onChange={handleInputChange}
+          onChange={(e) => handleInputChange(e)}
         />
         <div>
           <img
