@@ -45,8 +45,8 @@ __Ruta de creación__:
 
 
 ## Backend
-Se desarolla una base de datos con PostgreSql y Sequalize
-Se desarrolla un servidor en Node/Express con las siguientes rutas:
+- [ ]Se desarolla una base de datos con PostgreSql y Sequalize
+- [ ]Se desarrolla un servidor en Node/Express 
 
 
 ![poke-landing](https://user-images.githubusercontent.com/92520469/193912485-773a1b52-6679-4f87-aca9-a12cd3bcb0b9.png) Landing Page
